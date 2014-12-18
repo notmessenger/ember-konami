@@ -50,7 +50,7 @@ export default Ember.Mixin.create({
     },
 
     /**
-     * Inject Easter Egg: Kick Ass
+     * Inject Easter Egg: Font Bomb
      *
      * http://creativejs.com/2012/07/fontbomb-blow-up-the-web/
      *
