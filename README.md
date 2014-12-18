@@ -2,6 +2,7 @@
 
 This Ember CLI Addon provides Konami-code activated easter eggs to Ember applications.
 
+---
 
 # Available easter eggs
 
@@ -28,9 +29,11 @@ From [http://kathack.com](http://kathack.com), this easter egg turns any page in
 
 # Installation and Configuration
 
-`npm install ember-konami`
+1) `npm install --save-dev ember-konami`
 
-Make the following modifications to the Application Controller:
+2) `ember generate ember-konami`
+
+3) Make the following modifications to the Application Controller:
 
 ```
 import Ember from 'ember';
