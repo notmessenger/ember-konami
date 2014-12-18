@@ -70,7 +70,7 @@ In order to activate the easter egg you only need to enter the Konami code using
 of these keystrokes:
 
 ```
-↑ ↑ ↓ ↓ ← → ← → B A
+↑ ↑ ↓ ↓ ← → ← → B A Enter
 ```
 
 
