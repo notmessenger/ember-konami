@@ -1,6 +1,16 @@
+/* global Mousetrap */
+
 import Ember from 'ember';
 
 export default Ember.Mixin.create({
+
+    /**
+     * Easter egg to associate with keyboard shortcut
+     *
+     * @type {String}
+     * @default 'raptor'
+     */
+    easterEgg: 'raptor',
 
     /**
      * Initialize this addon
@@ -101,16 +111,16 @@ export default Ember.Mixin.create({
         document.getElementById( 'elRaptorShriek' ).addEventListener( 'canplaythrough', playAudio, false );
 
         $('<source>')
-            .attr( 'src', '/assets/audio/raptor-sound.mp3' )
+            .attr( 'src', '/ember-konami/assets/audio/raptor-sound.mp3' )
             .appendTo( '#elRaptorShriek' );
 
         $('<source>')
-            .attr( 'src', '/assets/audio/raptor-sound.ogg' )
+            .attr( 'src', '/ember-konami/assets/audio/raptor-sound.ogg' )
             .appendTo( '#elRaptorShriek' );
 
         $('<img>')
             .attr( 'id', 'elRaptor' )
-            .attr( 'src', '/assets/images/raptor.png' )
+            .attr( 'src', '/ember-konami/assets/images/raptor.png' )
             .attr( 'style', 'display: none' )
             .appendTo( 'body' )
             .css({
@@ -160,9 +170,13 @@ export default Ember.Mixin.create({
      * @return {void}
      */
     registerKeyboardShortcuts: function() {
-//        this.injectEasterEgg( 'raptor' );
-//        this.injectEasterEgg( 'katamari' );
-//        this.injectEasterEgg( 'fontBomb' );
-//        this.injectEasterEgg( 'kickAss' );
+        var easterEgg = this.get('easterEgg'),
+            self      = this;
+        Mousetrap.bind(
+            'up up down down left right left right b a enter',
+            function() {
+                self.injectEasterEgg( easterEgg );
+            }
+        );
     }
 });
