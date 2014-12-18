@@ -1,25 +1,74 @@
-# Ember-konami
+# ember-konami
 
-This README outlines the details of collaborating on this Ember addon.
+This Ember CLI Addon provides Konami-code activated easter eggs to Ember applications.
 
-## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+# Available easter eggs
 
-## Running
+## Raptor (enabled by default)
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+From [http://zurb.com/playground/jquery-raptorize](http://zurb.com/playground/jquery-raptorize), this easter egg unleashes
+a Raptor of Jurassic proportions.
 
-## Running Tests
+## Kick Ass
 
-* `ember test`
-* `ember test --server`
+From [http://kickassapp.com](http://kickassapp.com), this easter egg allows you to destroy DOM elements as if they were
+asteroids.
 
-## Building
+## Font Bomb
 
-* `ember build`
+From [http://creativejs.com/2012/07/fontbomb-blow-up-the-web/](http://creativejs.com/2012/07/fontbomb-blow-up-the-web/),
+this easter egg allows you to drop “bombs” on any site to blow the text to bits.
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+## Katamari Hack
+
+From [http://kathack.com](http://kathack.com), this easter egg turns any page into [Katamari Damacy](http://en.wikipedia.org/wiki/Katamari_Damacy).
+
+
+
+# Installation and Configuration
+
+`npm install ember-konami`
+
+Make the following modifications to the Application Controller:
+
+```
+import Ember from 'ember';
+import Konami from 'ember-konami/mixins/konami';
+
+export default Ember.Controller.extend( Konami, {
+
+});
+```
+
+The default easter egg is `raptor` but if you wish for a different one to be activated after the Konami code is entered,
+simply make the following modification:
+
+```
+import Ember from 'ember';
+import Konami from 'ember-konami/mixins/konami';
+
+export default Ember.Controller.extend( Konami, {
+    easterEgg: 'placeholder'
+});
+```
+
+where the `placeholder` text should be one of the following values, corresponding to the desired easter egg:
+
+* raptor
+* kickAss
+* fontBomb
+* katamari
+
+
+# Triggering the easter egg
+
+In order to activate the easter egg you only need to enter the Konami code using your keyboard.  The Konami code consists
+of these keystrokes:
+
+```
+↑ ↑ ↓ ↓ ← → ← → B A
+```
+
+
+
