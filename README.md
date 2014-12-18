@@ -61,7 +61,7 @@ where the `placeholder` text should be one of the following values, correspondin
 * raptor
 * kickAss
 * fontBomb
-* katamari
+* katamariHack
 
 
 # Triggering the easter egg

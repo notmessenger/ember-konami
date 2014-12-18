@@ -30,22 +30,15 @@ export default Ember.Mixin.create({
      * @return {void}
      */
     injectEasterEgg: function( egg ) {
-        switch( egg ) {
-            case 'raptor':
-                this.injectRaptor();
-                break;
-
-            case 'kickAss':
-                this.injectKickAss();
-                break;
-
-            case 'fontBomb':
-                this.injectFontBomb();
-                break;
-
-            case 'katamari':
-                this.injectKatamariHack();
-                break;
+        if (typeof egg === 'string') {
+            try {
+                this['inject' + Ember.String.capitalize(egg)]();
+            } catch (exception) {
+                Ember.Logger.log('Error when calling egg ' + egg);
+                Ember.Logger.log(exception);
+            }
+        } else if (typeof egg === 'function') {
+            egg(this);
         }
     },
 
