@@ -1,7 +1,7 @@
 {
   "name": "ember-konami",
   "description": "Ember CLI Addon to provide Konami-code activated easter eggs to Ember applications",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "directories": {
     "doc": "doc",
     "test": "tests"
