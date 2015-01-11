@@ -189,13 +189,12 @@ export default Ember.Mixin.create({
      * @return {void}
      */
     registerKeyboardShortcuts: function() {
-        var easterEgg = this.get( 'easterEgg' ),
-            self      = this;
+        var self = this;
 
         Mousetrap.bind(
             'up up down down left right left right b a enter',
             function() {
-                self.injectEasterEgg( easterEgg );
+                self.injectEasterEgg( self.get( 'easterEgg' ) );
             }
         );
     }
