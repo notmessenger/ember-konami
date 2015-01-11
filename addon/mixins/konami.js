@@ -1,4 +1,4 @@
-/* global Mousetrap */
+/* global Mousetrap, cornify_add */
 
 import Ember from 'ember';
 
@@ -140,6 +140,20 @@ export default Ember.Mixin.create({
                     $('img#elRaptor').remove();
                 });
             });
+    },
+
+    /**
+     * Inject Easter Egg: Cornify
+     *
+     * http://www.cornify.com/
+     *
+     * @function injectCornify
+     * @return {void}
+     */
+    injectCornify: function() {
+        $.getScript('//www.cornify.com/js/cornify.js', function() {
+            cornify_add();
+        });
     },
 
     /**

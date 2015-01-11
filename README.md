@@ -25,6 +25,10 @@ this easter egg allows you to drop “bombs” on any site to blow the text to b
 
 From [http://kathack.com](http://kathack.com), this easter egg turns any page into [Katamari Damacy](http://en.wikipedia.org/wiki/Katamari_Damacy).
 
+## Cornify
+
+From [http://www.cornify.com/](http://www.cornify.com/), this easter egg adds Unicorns and Rainbows to your page.
+
 
 
 # Installation and Configuration
@@ -62,6 +66,7 @@ where the `placeholder` text should be one of the following values, correspondin
 * kickAss
 * fontBomb
 * katamariHack
+* cornify
 
 
 # Triggering the easter egg
@@ -70,7 +75,7 @@ In order to activate the easter egg you only need to enter the Konami code using
 of these keystrokes:
 
 ```
-↑ ↑ ↓ ↓ ← → ← → B A
+↑ ↑ ↓ ↓ ← → ← → B A Enter
 ```
 
 
