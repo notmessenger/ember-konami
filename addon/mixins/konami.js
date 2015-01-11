@@ -177,7 +177,7 @@ export default Ember.Mixin.create({
      * @return {void}
      */
     registerKeyboardShortcuts: function() {
-        var easterEgg = this.get('easterEgg'),
+        var easterEgg = this.get( 'easterEgg' ),
             self      = this;
 
         Mousetrap.bind(
