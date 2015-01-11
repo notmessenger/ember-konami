@@ -31,6 +31,10 @@ From [http://kathack.com](http://kathack.com), this easter egg turns any page in
 
 From [http://www.cornify.com/](http://www.cornify.com/), this easter egg adds Unicorns and Rainbows to your page.
 
+## Turn Down For What
+
+From [https://nthitz.github.io/turndownforwhatjs/](https://nthitz.github.io/turndownforwhatjs/), this turns any website down for what
+
 
 # Installation and Configuration
 
@@ -68,6 +72,7 @@ where the `placeholder` text should be one of the following values, correspondin
 * fontBomb
 * katamariHack
 * cornify
+* turnDownForWhat
 
 # Specifying a custom easter egg
 

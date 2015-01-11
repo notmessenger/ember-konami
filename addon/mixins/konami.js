@@ -157,6 +157,18 @@ export default Ember.Mixin.create({
     },
 
     /**
+     * Inject Easter Egg: Turn Down For What
+     *
+     * https://nthitz.github.io/turndownforwhatjs/
+     *
+     * @function injectTurnDownForWhat
+     * @return {void}
+     */
+    injectTurnDownForWhat: function() {
+        this.injectScriptSource( '//nthitz.github.io/turndownforwhatjs/tdfw.js' );
+    },
+
+    /**
      * Inject JavaScript source into HEAD element
      *
      * @private
