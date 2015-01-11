@@ -4,34 +4,32 @@ This Ember CLI Addon provides for the easy addition of easter eggs into an Ember
 collection of easter eggs to choose from, as well as you can specify your own.  The specified easter egg is activated
 by the user entering the Konami code via their keyboard.
 
----
-
 # Available easter eggs
 
-## Raptor (enabled by default)
+### Raptor (enabled by default)
 
 From [http://zurb.com/playground/jquery-raptorize](http://zurb.com/playground/jquery-raptorize), this easter egg unleashes
 a Raptor of Jurassic proportions.
 
-## Kick Ass
+### Kick Ass
 
 From [http://kickassapp.com](http://kickassapp.com), this easter egg allows you to destroy DOM elements as if they were
 asteroids.
 
-## Font Bomb
+### Font Bomb
 
 From [http://creativejs.com/2012/07/fontbomb-blow-up-the-web/](http://creativejs.com/2012/07/fontbomb-blow-up-the-web/),
 this easter egg allows you to drop “bombs” on any site to blow the text to bits.
 
-## Katamari Hack
+### Katamari Hack
 
 From [http://kathack.com](http://kathack.com), this easter egg turns any page into [Katamari Damacy](http://en.wikipedia.org/wiki/Katamari_Damacy).
 
-## Cornify
+### Cornify
 
 From [http://www.cornify.com/](http://www.cornify.com/), this easter egg adds Unicorns and Rainbows to your page.
 
-## Turn Down For What
+### Turn Down For What
 
 From [https://nthitz.github.io/turndownforwhatjs/](https://nthitz.github.io/turndownforwhatjs/), this turns any website down for what
 
@@ -74,7 +72,7 @@ where the `placeholder` text should be one of the following values, correspondin
 * cornify
 * turnDownForWhat
 
-# Specifying a custom easter egg
+## Specifying a custom easter egg
 
 Instead of setting one of the values above in place of the `placeholder` text, you can define a function to be executed
 when the easter egg is activated.  In this way you can trigger your own custom easter egg.
