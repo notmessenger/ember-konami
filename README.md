@@ -1,6 +1,8 @@
 # ember-konami
 
-This Ember CLI Addon provides Konami-code activated easter eggs to Ember applications.
+This Ember CLI Addon provides for the easy addition of easter eggs into an Ember application.  It comes bundled with a
+collection of easter eggs to choose from, as well as you can specify your own.  The specified easter egg is activated
+by the user entering the Konami code via their keyboard.
 
 ---
 
@@ -28,7 +30,6 @@ From [http://kathack.com](http://kathack.com), this easter egg turns any page in
 ## Cornify
 
 From [http://www.cornify.com/](http://www.cornify.com/), this easter egg adds Unicorns and Rainbows to your page.
-
 
 
 # Installation and Configuration
@@ -65,8 +66,13 @@ where the `placeholder` text should be one of the following values, correspondin
 * raptor
 * kickAss
 * fontBomb
-* katamari
+* katamariHack
 * cornify
+
+# Specifying a custom easter egg
+
+Instead of setting one of the values above in place of the `placeholder` text, you can define a function to be executed
+when the easter egg is activated.  In this way you can trigger your own custom easter egg.
 
 
 # Triggering the easter egg
