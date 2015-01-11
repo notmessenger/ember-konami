@@ -30,15 +30,15 @@ export default Ember.Mixin.create({
      * @return {void}
      */
     injectEasterEgg: function( egg ) {
-        if (typeof egg === 'string') {
+        if ( 'string' === typeof egg ) {
             try {
-                this['inject' + Ember.String.capitalize(egg)]();
-            } catch (exception) {
-                Ember.Logger.log('Error when calling egg ' + egg);
-                Ember.Logger.log(exception);
+                this[ 'inject' + Ember.String.capitalize(egg) ]();
+            } catch ( exception ) {
+                Ember.Logger.log( 'Error when calling egg ' + egg );
+                Ember.Logger.log( exception );
             }
-        } else if (typeof egg === 'function') {
-            egg(this);
+        } else if ( 'function' === typeof egg ) {
+            egg( this );
         }
     },
 
@@ -151,7 +151,7 @@ export default Ember.Mixin.create({
      * @return {void}
      */
     injectCornify: function() {
-        $.getScript('//www.cornify.com/js/cornify.js', function() {
+        $.getScript( '//www.cornify.com/js/cornify.js', function() {
             cornify_add();
         });
     },
@@ -179,6 +179,7 @@ export default Ember.Mixin.create({
     registerKeyboardShortcuts: function() {
         var easterEgg = this.get('easterEgg'),
             self      = this;
+
         Mousetrap.bind(
             'up up down down left right left right b a enter',
             function() {
