@@ -36,11 +36,9 @@ From [https://nthitz.github.io/turndownforwhatjs/](https://nthitz.github.io/turn
 
 # Installation and Configuration
 
-1) `npm install --save-dev ember-konami`
+1) `ember install:addon ember-konami`
 
-2) `ember generate ember-konami`
-
-3) Make the following modifications to the Application Controller:
+2) Make the following modifications to the Application Controller:
 
 ```
 import Ember from 'ember';
