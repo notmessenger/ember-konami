@@ -13,6 +13,14 @@ export default Ember.Mixin.create({
     easterEgg: 'raptor',
 
     /**
+     * Default Konami key combination
+     *
+     * @type {String}
+     * @default 'up up down down left right left right b a enter'
+     */
+    keyCombo: 'up up down down left right left right b a enter',
+
+    /**
      * Initialize this addon
      *
      * @return {void}
@@ -192,7 +200,7 @@ export default Ember.Mixin.create({
         var self = this;
 
         Mousetrap.bind(
-            'up up down down left right left right b a enter',
+            self.get( 'keyCombo' ),
             function() {
                 self.injectEasterEgg( self.get( 'easterEgg' ) );
             }
