@@ -1,3 +1,11 @@
+
+[![Latest Release](https://img.shields.io/github/release/notmessenger/ember-konami.svg)](https://github.com/notmessenger/ember-konami/releases) ![Ember CLI version](https://img.shields.io/badge/ember%20cli-0.1.7-orange.svg) [![License](https://img.shields.io/npm/l/ember-konami.svg)](LICENSE.md) [![Downloads](https://img.shields.io/npm/dm/ember-konami.svg)](https://www.npmjs.com/package/ember-konami)
+
+[![Dependencies](https://img.shields.io/david/notmessenger/ember-konami.svg)](https://david-dm.org/notmessenger/ember-konami) [![Dev Dependencies](https://img.shields.io/david/dev/notmessenger/ember-konami.svg)](https://david-dm.org/notmessenger/ember-konami#info=devDependencies)
+
+[![Build Status](https://img.shields.io/travis/notmessenger/ember-konami/develop.svg)](https://travis-ci.org/notmessenger/ember-konami) [![Code Climate](https://img.shields.io/codeclimate/github/notmessenger/ember-konami.svg)](https://codeclimate.com/github/notmessenger/ember-konami)
+
+
 # ember-konami
 
 This Ember CLI Addon provides for the easy addition of easter eggs into an Ember application.  It comes bundled with a
